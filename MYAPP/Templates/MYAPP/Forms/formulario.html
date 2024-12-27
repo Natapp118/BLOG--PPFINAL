@@ -1,0 +1,36 @@
+{% extends 'MYAPP/base.html' %}
+
+{% block title %}
+INGENIERIA
+{% endblock %} 
+
+{% block content %}
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-4">
+
+            <form action="{% url 'formulario' %}" method="POST">
+                </form action="" method= "POST">
+                 {% csrf_token %}
+
+                <div class="mb-3">
+                  <label class="">NOMBRE PROYECTO</label>
+                  <input name="proyecto" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">USUARIO</label>
+                  <input name="USUARIO" type="text" class="form-control">
+                </div>
+          
+                <button type="submit" class="btn btn-primary">Crear proyecto</button>
+          
+            
+             
+                 {{form.as_p}}
+           </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %} 

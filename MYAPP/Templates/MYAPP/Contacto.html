@@ -1,0 +1,116 @@
+{% extends 'MYAPP/base.html' %}
+
+{% load static %}
+
+{% block title %}
+INGENIERIA
+{% endblock %} 
+
+
+{% block content %}
+    <div class="container">
+       <h2 class="text-center text-dark">
+           CONTACTANOS
+       </h2>
+       <br>
+       <div class="row g-4">
+           <div class="col-md-6 col-lg-3">
+               <div class="card bg-success">
+                    <div class="card-body text-center">
+                        <img src="{% static 'img/NAT.jpeg' %}" class="rounded-circle mb-3" width="150px">
+                    <h3 class="card-title mb-3">Lizeth Nathalia Paez</h3>
+                    <p class="card-text">Ingeniera Metalurgica</p>
+                    <p class="card-text">Sigueme en:</p>
+                    <a href="https://github.com/Natapp118"><i class="bi bi-github text-dark mx-1"></i></a>
+                    <a href="https://www.linkedin.com/in/natalia-paez-503401171/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                    </div>
+               </div>
+           </div>
+           <div class="col">
+            <div class="">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <p>Holaaaa..... Yo soy Ingeniera metalúrgica con especialización en gestión de proyectos estratégicos y 4 años de experiencia en el área comercial, actualmente laboro como Coordinadora Comercial</p>
+                    <p>  Apasionada por el aprendizaje continuo, que me permita estar en un proceso de mejora continua. Mi compromiso con el desarrollo profesional me impulsa a afrontar nuevos retos en entornos dinámicos. <p>
+                 </div>
+            </div>
+        </div>
+       </div>
+    </div>
+ 
+
+    <div class="container text-center">
+        <button type="submit" class="btn btn-primary">REGISTRATE AQUI </button>
+
+
+        <!-- Contact-->
+<section class="page-section" id="contact">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="mt-0">____________________</h2> 
+                <h2 class="mt-0">COMUNICATE CON NOSOTROS</h2>
+                <hr class="divider" />
+                <p class="text-muted mb-5"> TIENES DUDAS, ESCRIBENOS, TE AYUDAREMOS A SOLUCIONAR TUS INQUIETUDES</p>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+               
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="name">NOMBRES</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">se requiere nombre**</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email">EMAIL</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">se requiere email.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">no es valido</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <label for="phone">Numero de celular</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">se requiere numero.</div>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">Mensaje</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Escriba su mensaje</div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Su mensaje ha sido enviado </div>
+                            
+                            <br />
+                       
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error¡¡</div></div>
+                    <!-- Submit Button-->
+                    <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">ENVIAR</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                <div>+57 0000000 - NATALIA PAEZ</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
